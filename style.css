@@ -204,7 +204,7 @@ header nav ul li:hover{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-
+    margin-bottom: 2em;
 }
 
 .van-life-filter-container{
