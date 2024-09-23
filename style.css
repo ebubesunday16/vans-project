@@ -1,0 +1,242 @@
+*{
+    box-sizing: border-box;
+    font-family: "Inter", system-ui;
+
+}
+
+/* Utility styling */
+
+.van-life-container{
+    max-width: 720px;
+    margin: auto;
+    padding: 0 1.5em;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+img{
+    display: block;
+    object-fit: cover;
+    width: 100%;
+}
+
+body{
+    margin: 0;
+    background-color: #FFF7ED;
+}
+
+h2{
+    font-size: 2rem;
+
+}
+
+p{
+    font-size: 1rem;
+}
+
+/* Navigation styling */
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFF7ED;
+    padding: 1.2rem 0;
+
+    
+}
+
+header nav .logo{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin: 0;
+}
+
+header nav ul{
+    display: flex;
+    gap: 1em;
+}
+
+header nav ul li {
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: black;
+}
+
+header nav ul li:hover{
+    text-decoration: underline;
+}
+
+.active-link{
+    text-decoration: underline;
+    
+}
+
+
+/* Hero design */
+
+
+.homepage-hero{
+    color: white;
+    background: url("./images/image\ 53.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homepage-hero-div{
+    display: flex;
+    flex-direction: column;
+    padding-top: 4em;
+    padding-bottom: 4em;
+
+}
+
+.homepage-hero-div h1{
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+.homepage-hero-div p{
+    font-size: 1rem;
+    margin: 0;
+}
+
+.homepage-hero-div button{
+    margin-top: 3rem;
+    font-size: 1rem;
+    padding: 1em;
+    border-radius: 5px;
+    background-color: #FF8C38;
+    border: none;
+}
+
+/* Footer styling */
+
+.footer{
+    margin-top: 3rem;
+    background-color: #252525;
+    color: #AAAAAA;
+    text-align: center;
+    font-size: 0.875rem;
+    padding: 1.5em 0;
+    
+}
+
+.footer p{
+    margin: 0;
+}
+
+/* About page styling */
+
+.about-container{
+    width: 100%;
+    padding:2em;
+    margin: 3em 0;
+    background-color: #FFCC8D;
+    border-radius: 5px;
+    color: #161616;
+}
+
+.consistent-header{
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+.about-container button{
+    background-color: #161616;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 5px;
+}
+
+/* Van life styling */
+
+.van-life-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5em;
+}
+
+.each-van-life-list img{
+    border-radius: 5px;
+}
+
+.each-van-life-list h2{
+    font-size: 1.2rem;
+}
+
+.pointer{
+    cursor: pointer;
+}
+.type-button{
+    border: none;
+    display: inline-block;
+    background-color: #FFEAD0;
+    color: #4D4D4D;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.each-van-life-list-col-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.each-van-life-list-col-2 h2{
+    margin: 0.5em 0;
+    font-size: 1.2rem;
+
+}
+
+.each-van-life-list-col-2 p{
+    font-size: 0.9rem;
+    margin: 0.5em 0;
+    
+}
+
+.each-van-life-list-col-2 span{
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+
+.van-life-filter{
+    display: flex;
+    gap: 1em;
+    margin-bottom: 3em;
+    align-items: center;
+}
+
+.clear-filter{
+    font-size: 1rem;
+    color: #4D4D4D;
+    text-decoration: underline;
+    margin-left: auto;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Vans detail */
+
