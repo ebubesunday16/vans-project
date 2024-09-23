@@ -37,6 +37,7 @@ export default function Vans(){
     }
     
     
+    
     const types = vansList.map(item => item.type)
     const uniqueType = [...new Set(types)]
     const mappedUniqueType = uniqueType.map(item => <button className="type-button pointer" onClick={() => {handleParameters(item)}}>{item}</button>)
@@ -49,7 +50,7 @@ export default function Vans(){
                 <div className="each-van-life-list-col-2">
                     <div>
                         <h2 ><Link to={`${item.id}`} state={pathname} className="nav-link">{item.name}</Link></h2>
-                        <button className="type-button pointer" onClick={() => handleParameters(item.type)}>{item.type}</button>
+                        <button className={`type-button pointer ${item.type}-css`} onClick={() => handleParameters(item.type)}>{item.type}</button>
                     </div>
                     <div>
                         <p><span>{`$${item.price}`}</span> /day</p>
@@ -59,27 +60,29 @@ export default function Vans(){
         )
     })
 
-    if(!filteredList){
-        filteredList = (<h2>Loading</h2>)
-    }
     
-    return(
+    
+    return mappedVansList.length !== 0? (
         <>
         <div className="van-life-container">
-            <h2 className="consistent-header">Explore our van options</h2>
+            <div className="vans-page">
 
-            <div className="van-life-filter">
-                {mappedUniqueType}
-                <div className="clear-filter" onClick={() => setSearchParams({})}>Clear filters</div>
+                <h2 className="consistent-header">Explore our van options</h2>
 
-            </div>
+                <div className="van-life-filter">
+                    {mappedUniqueType}
+                    <div className="clear-filter" onClick={() => setSearchParams({})}>Clear filters</div>
 
-            <div className="van-life-list">
-                {mappedVansList}
+                </div>
+
+                <div className="van-life-list">
+                    {mappedVansList}
+                </div>
+
             </div>
         
         </div>
         
         </>
-    )
+    ) : (<div className="van-life-container"><h2>Loading</h2></div>)
 }

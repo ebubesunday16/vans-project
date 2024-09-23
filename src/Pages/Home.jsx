@@ -1,4 +1,5 @@
 import React from "react"
+import {Link} from "react-router-dom"
 
 export default function Home(){
 
@@ -9,7 +10,7 @@ export default function Home(){
                 <p>
                 Add adventure to your life by joining the #vanlife movement. Rent the perfect van to make your perfect road trip.
                 </p>
-                <button>Find your van</button>
+                <button className="asylum-button"><Link className="nav-link" to="/vans">Find your van</Link></button>
             </div>
         </section>
     )

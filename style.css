@@ -12,6 +12,15 @@
     padding: 0 1.5em;
 }
 
+.consistent-header{
+    margin: 0;
+    font-size: 2rem;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
 main{
     height: 100vh;
     display: flex;
@@ -89,7 +98,7 @@ header nav ul li:hover{
 
 .homepage-hero{
     color: white;
-    background: url("./public/images/image53.png");
+    background: url("./images/image53.png");
     background-size: cover;
     background-repeat: no-repeat;
     flex: 1;
@@ -118,7 +127,7 @@ header nav ul li:hover{
     margin: 0;
 }
 
-.homepage-hero-div button{
+.asylum-button{
     margin-top: 3rem;
     font-size: 1rem;
     padding: 1em;
@@ -127,10 +136,13 @@ header nav ul li:hover{
     border: none;
 }
 
+.asylum-button:hover{
+    background-color: #e67c31;
+    
+}
 /* Footer styling */
 
 .footer{
-    margin-top: 3rem;
     background-color: #252525;
     color: #AAAAAA;
     text-align: center;
@@ -144,22 +156,31 @@ header nav ul li:hover{
 }
 
 /* About page styling */
-
 .about-container{
-    width: 100%;
-    padding:2em;
     margin: 3em 0;
+    width: 100%;
+}
+
+.about-container > h2{
+    margin-bottom: 1em;
+}
+
+.about-container-explore-vans{
+    width: 100%;
+    padding:2rem;
     background-color: #FFCC8D;
     border-radius: 5px;
     color: #161616;
+    margin-top: 2em;
 }
 
-.consistent-header{
-    margin-top: 2rem;
-    font-size: 2rem;
+.about-container-explore-vans h2{
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
 }
 
-.about-container button{
+.about-container-explore-vans button{
     background-color: #161616;
     color: white;
     border: none;
@@ -169,10 +190,36 @@ header nav ul li:hover{
 
 /* Van life styling */
 
+.vans-page{
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.vans-page h2{
+    margin-bottom: 2rem;
+}
+
+.van-life-filter{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 3em;
+}
+
+.clear-filter{
+    font-size: 1rem;
+    color: #4D4D4D;
+    text-decoration: underline;
+    margin-left: auto;
+    font-weight: 500;
+    cursor: pointer;
+}
+
 .van-life-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5em;
+    gap: 2em 1.5em;
+
 }
 
 .each-van-life-list img{
@@ -183,9 +230,7 @@ header nav ul li:hover{
     font-size: 1.2rem;
 }
 
-.pointer{
-    cursor: pointer;
-}
+
 .type-button{
     border: none;
     display: inline-block;
@@ -217,26 +262,67 @@ header nav ul li:hover{
 
 .each-van-life-list-col-2 span{
     display: block;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     font-weight: 700;
 }
 
 
-.van-life-filter{
-    display: flex;
-    gap: 1em;
+
+
+/* Styling Button by Types */
+
+.simple-css{
+    background-color: #E17654;
+    color: #FFEAD0;
+}
+
+.rugged-css{
+    background-color: #115E59;
+    color: #FFEAD0;
+}
+
+.luxury-css{
+    background-color: #161616;
+    color: #FFEAD0;
+}
+
+/* Styling Vans Detail */
+
+.vans-detail-container{
+    width: 100%;
     margin-bottom: 3em;
-    align-items: center;
 }
 
-.clear-filter{
-    font-size: 1rem;
-    color: #4D4D4D;
+.van-detail-navigator{
     text-decoration: underline;
-    margin-left: auto;
-    font-weight: 500;
-    cursor: pointer;
+}
+.vans-detail-container img{
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    margin: 2em 0;
 }
 
-/* Vans detail */
+.vans-detail-container > h2{
+    margin: 1rem 0;
+}
 
+.vans-detail-pricing{
+    font-size: 1.25rem;
+    margin: 0;
+}
+.vans-detail-pricing span{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.vans-detail-description{
+    font-size: 1rem;
+    margin: 1.5rem 0;
+}
+
+.vans-detail-container button{
+    width: 100%;
+    color: white;
+    margin: 0;
+}
