@@ -70,7 +70,9 @@ export default function Vans(){
                 <h2 className="consistent-header">Explore our van options</h2>
 
                 <div className="van-life-filter">
+                    <div className="van-life-filter-container">
                     {mappedUniqueType}
+                    </div>
                     <div className="clear-filter" onClick={() => setSearchParams({})}>Clear filters</div>
 
                 </div>

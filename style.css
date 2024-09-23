@@ -201,18 +201,26 @@ header nav ul li:hover{
 
 .van-life-filter{
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.van-life-filter-container{
+    display: flex;
     gap: 1rem;
     align-items: center;
-    margin-bottom: 3em;
+    flex: 1;
 }
 
 .clear-filter{
     font-size: 1rem;
     color: #4D4D4D;
     text-decoration: underline;
-    margin-left: auto;
     font-weight: 500;
     cursor: pointer;
+    margin-left: 0;
 }
 
 .van-life-list{
