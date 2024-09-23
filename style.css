@@ -89,7 +89,7 @@ header nav ul li:hover{
 
 .homepage-hero{
     color: white;
-    background: url("./images/image\ 53.png");
+    background: url(".\images\image53.png");
     background-size: cover;
     background-repeat: no-repeat;
     flex: 1;

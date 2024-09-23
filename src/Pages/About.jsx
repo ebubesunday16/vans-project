@@ -4,7 +4,7 @@ export default function About(){
 
     return (
         <>
-            <img src="../images/image 54.png"/>
+            <img src="../images/image54.png"/>
             <div className="van-life-container">
 
 
